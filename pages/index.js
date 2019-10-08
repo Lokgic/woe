@@ -18,48 +18,6 @@ const FlexContainer = styled.div`
   }
 `;
 
-const FlexBox = styled.div`
-  background-image: ${props => `url(/static/images/${props.bg})`};
-  background-color: rgba(0, 0, 0, 0.1);
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 320px;
-  height: 460px;
-  /* padding: 40px; */
-  margin: auto auto 4rem auto;
-  /* @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
-    width: 100%;
-    height: auto;
-  } */
-`;
-
-const FlexText = styled.div`
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  h2 {
-    margin: auto auto 5rem auto;
-    font-family: ${props => props.theme.opensans};
-    font-weight: 300;
-    font-size: 2.3rem;
-    width: 200px;
-  }
-  p {
-    margin: 0 auto auto auto;
-    font-family: ${props => props.theme.opensans};
-    font-weight: 300;
-    font-size: 1.8rem;
-    width: 200px;
-    text-transform: capitalize;
-  }
-`;
-
 const Jumbo = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -74,17 +32,18 @@ const Jumbo = styled.div`
 `;
 
 const JumboBox = styled.div`
-  width:800px;
-  min-width:800px;
+  width: 800px;
+  min-width: 800px;
   /* width:100vw; */
   margin: auto;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: min-content min-content;
-  /* @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
-    width: 100%;
+  @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
+    width: 100wh;
     height: auto;
-  } */
+    min-width: 400px;
+  }
 `;
 
 const WeightBox = styled.div`
@@ -130,20 +89,32 @@ const TextContentContainer = styled.div`
     margin: auto auto 40px auto;
     padding: 20px 0px;
   }
+
+  @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
+    padding: 0 10px;
+    p {
+      width: 100vw;
+    }
+    h2 {
+      width: 100vw;
+    }
+  }
 `;
 
 const PersonBox = styled.div`
-  width:800px;
-  min-width:800px;
+  width: 800px;
+  min-width: 800px;
   /* width:100vw; */
   margin: 40px auto;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: min-content min-content;
-  /* @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
-    width: 100%;
+  @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
+    width: 100wh;
+    min-width: 400px;
     height: auto;
-  } */
+    margin: 10px auto;
+  }
 `;
 
 const HeadShotBox = styled.div`
@@ -173,6 +144,9 @@ const PersonDesc = styled.div`
   grid-row: 2/3;
   color: ${props => props.theme.black};
   padding-left: 4rem;
+  @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
+    padding-left: 1rem;
+  }
 `;
 
 export default () => {
@@ -244,7 +218,7 @@ export default () => {
             <FontAwesomeIcon icon="user" />
           </HeadShotBox>
           <PersonTitle>
-            Christian Dahlman, <span> | Project Codirector</span>
+            Christian Dahlman <span> | Project Codirector</span>
           </PersonTitle>
           <PersonDesc>
             Christian Dahlman, the project codirector, is Professor of
