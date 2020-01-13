@@ -390,6 +390,12 @@ const WhoWeAreContainer = styled.div`
       width: 350px;
       /* max-width: 100%; */
     }
+    h2 {
+      margin:2rem auto .5rem auto;
+    }
+    p {
+      margin:.5rem auto auto auto;
+    }
   }
 `;
 
