@@ -2,16 +2,18 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const StyHeader = styled.header`
-  padding: 4rem 4rem 1rem 4rem;
-
+  padding: 1rem 4rem 1rem 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
   margin: 0 0;
   /* text-transform: uppercase; */
   padding: 10px 20px;
   display: flex;
   justify-content: flex-start;
-  background: ${props => props.theme.darkblue};
-  color: ${props => props.theme.offWhite};
-  @media (max-width: ${props => props.theme.breakpoint.w[1]}) {
+  background: ${props => props.theme.main};
+  color: ${props => props.theme.darkGrey};
+  @media (max-width: ${props => props.theme.breakpoints.w[1]}) {
     padding: 10px 10px;
   }
 `;
@@ -25,7 +27,8 @@ const Logo = styled.h1`
   font-size: 1.8rem;
   cursor: pointer;
   max-width: 20rem;
-  @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
+  margin: 0;
+  @media (max-width: ${props => props.theme.breakpoints.w[0]}) {
     letter-spacing: 0.8rem;
     font-size: 1.8rem;
   }
@@ -34,15 +37,16 @@ const Logo = styled.h1`
 const MenuLink = styled.a`
   margin: auto;
   text-decoration: none;
-  font-weight: ${props => (props.active ? 400 : 300)};
+  /* font-weight: ${props => (props.active ? 400 : 300)}; */
   font-family: ${props => props.theme.opensans};
   font-size: 2rem;
+  font-weight: 500;
   cursor: pointer;
-  color: white;
+  color: ${props => props.theme.darkGrey};
   :hover {
     text-decoration: underline;
   }
-  @media (max-width: ${props => props.theme.breakpoint.w[0]}) {
+  @media (max-width: ${props => props.theme.breakpoints.w[0]}) {
     font-size: 1.3rem;
   }
 `;

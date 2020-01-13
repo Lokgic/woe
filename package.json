@@ -4,22 +4,25 @@
   "description": "homepage for the weight of evidence project",
   "main": "index.js",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.5",
-    "acorn": "^6.1.x",
-    "d3": "^5",
-    "next": "^9.1.x",
-    "react": "^16.10",
-    "react-dom": "^16.10",
-    "react-spring": "^8",
-    "styled-components": "^4.4",
-    "styled-system": "^5.1.2"
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@types/styled-components": "^4.4.1",
+    "acorn": "^6.4.0",
+    "d3": "^5.14.2",
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-spring": "^8.0.27",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
+    "@babel/core": "^7.7.7",
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.17",
     "babel-loader": "^8.0.5",
-    "babel-plugin-styled-components": "^1.10.0"
+    "babel-plugin-styled-components": "^1.10.6",
+    "typescript": "^3.7.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

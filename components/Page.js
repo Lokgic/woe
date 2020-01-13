@@ -11,7 +11,8 @@ export const theme = {
   grey: "hsl(0, 0%, 47%)",
   darkGrey: "#222",
   black: "#202124",
-  breakpoint: {
+  main: "rgb(217, 117, 117)",
+  breakpoints: {
     w: ["1000px", "750px"],
     h: ["800px"]
   }
@@ -41,23 +42,20 @@ const MainContainer = styled.div`
   display: grid;
   grid-template-rows: min-content 1fr;
   /* height: 90vh; */
-  @media (max-width: ${theme.breakpoint.w[0]}) {
+  @media (max-width: ${theme.breakpoints.w[0]}) {
     /* 
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto 9fr; */
   }
-  @media (max-width: ${theme.breakpoint.w[1]}) {
+  @media (max-width: ${theme.breakpoints.w[1]}) {
     /* grid-template-rows: auto 7fr; */
   }
 `;
 
 const ContentContainer = styled.div`
-  /* place-self: stretch;
-  display: grid; */
-
-  /* height: auto; */
-  margin: auto;
+  margin: 66px auto auto auto;
+  width: 100vw;
 `;
 
 const Page = props => {
