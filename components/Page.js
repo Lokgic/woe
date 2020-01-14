@@ -54,7 +54,7 @@ const MainContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  margin: 66px auto auto auto;
+  margin: 63px auto auto auto;
   width: 100vw;
 `;
 

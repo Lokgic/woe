@@ -13,13 +13,14 @@ const StyHeader = styled.header`
   justify-content: flex-start;
   background: ${props => props.theme.main};
   color: ${props => props.theme.darkGrey};
+  height: 65px;
   @media (max-width: ${props => props.theme.breakpoints.w[1]}) {
-    padding: 10px 10px;
+    height: 65px;
   }
 `;
 
 const Logo = styled.h1`
-  display: inline;
+  display: i;
   text-transform: uppercase;
   font-weight: 300;
   font-family: ${props => props.theme.muli};
@@ -30,7 +31,8 @@ const Logo = styled.h1`
   margin: 0;
   @media (max-width: ${props => props.theme.breakpoints.w[0]}) {
     letter-spacing: 0.8rem;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    display: none;
   }
 `;
 
@@ -47,7 +49,7 @@ const MenuLink = styled.a`
     text-decoration: underline;
   }
   @media (max-width: ${props => props.theme.breakpoints.w[0]}) {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 `;
 
@@ -55,20 +57,22 @@ export default ({ active, setActive }) => {
   return (
     <StyHeader>
       <Link href="/">
-        <Logo> Weight / Evidence</Logo>
+        <Logo> Weight : Evidence</Logo>
       </Link>
-
       <Link href="/">
+        <MenuLink>Home</MenuLink>
+      </Link>
+      <Link href="/comingsoon">
         <MenuLink>Cases</MenuLink>
       </Link>
-      <Link href="/">
+      <Link href="/comingsoon">
         <MenuLink>Findings</MenuLink>
       </Link>
-      <Link href="/">
+      <Link href="/comingsoon">
         <MenuLink>Publications</MenuLink>
       </Link>
 
-      <MenuLink href="">About</MenuLink>
+      <MenuLink href="/comingsoon">About</MenuLink>
     </StyHeader>
   );
 };
