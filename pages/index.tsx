@@ -183,10 +183,14 @@ export default () => (
           </h1>
           <p>
             "...new evidence increases the{" "}
-            <span style={{ color: "rgb(217, 117, 117)" }}>weight</span> of an
-            argument. New evidence will sometimes decrease the probability of an
-            argument, but it will always increase its{" "}
-            <span style={{ color: "rgb(217, 117, 117)" }}>weight</span>
+            <span style={{ color: "rgb(217, 117, 117)", fontWeight: 700 }}>
+              weight
+            </span>{" "}
+            of an argument. New evidence will sometimes decrease the probability
+            of an argument, but it will always increase its{" "}
+            <span style={{ color: "rgb(217, 117, 117)", fontWeight: 700 }}>
+              weight
+            </span>
             ."
           </p>
           <p>
@@ -258,7 +262,7 @@ export default () => (
         onClick={() => window.open("https://fitelson.org")}
       >
         <img src="/static/headshots/fitelson.png" />
-        <h2>Branden Fitelon</h2>
+        <h2>Branden Fitelson</h2>
         <p>Distinguish Professor of Philosophy, Northeastern University </p>
       </div>
       <div
