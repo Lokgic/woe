@@ -47,19 +47,20 @@ const FrontPageGrid = styled.div`
         width: 85%;
         display: flex;
         flex-direction: column;
-        font-weight: 300;
+        font-weight: 400;
         /* max-width: 500px; */
         margin: auto auto auto 1rem;
         p {
           margin: 1rem auto auto 2rem;
           color: white;
+          font-size: 2.4rem;
         }
         h1 {
           margin: 1rem auto auto 2rem;
           text-transform: uppercase;
           color: white;
-          font-weight: 300;
-          font-size: 4.5rem;
+          font-weight: 400;
+          font-size: 6.5rem;
           .emph {
             color: rgb(217, 117, 117);
             font-weight: 700;
@@ -88,6 +89,12 @@ const FrontPageGrid = styled.div`
           max-width: 605px;
           width: 85%;
           margin: auto;
+          h1 {
+            font-size: 4.5rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
         }
         p {
           margin: 2rem 2rem;
@@ -110,16 +117,16 @@ const FrontPageGrid = styled.div`
       /* align-content: flex-start; */
 
       h3 {
-        font-weight: 300;
-        font-size: 2.4rem;
+        font-weight: 500;
+        font-size: 2.8rem;
         margin: auto 1rem 1rem 1rem;
         padding-bottom: 1rem;
         border-bottom: ${props => `${props.theme.darkGrey} 2px solid`};
       }
       p {
         margin: 1rem 1rem 5rem 1rem;
-        font-size: 1.5rem;
-        font-weight: 300;
+        font-size: 1.8rem;
+        font-weight: 400;
       }
       @media (max-width: ${props => props.theme.breakpoints.w[1]}) {
         padding: 2rem 1rem;
@@ -175,9 +182,12 @@ export default () => (
             The <span className="emph">Weight</span> of Evidence Project
           </h1>
           <p>
-            "...new evidence increases the weight of an argument. New evidence
-            will sometimes decrease the probability of an argument, but it will
-            always increase its ‘weight’."
+            "...new evidence increases the{" "}
+            <span style={{ color: "rgb(217, 117, 117)" }}>weight</span> of an
+            argument. New evidence will sometimes decrease the probability of an
+            argument, but it will always increase its{" "}
+            <span style={{ color: "rgb(217, 117, 117)" }}>weight</span>
+            ."
           </p>
           <p>
             John Maynard Keynes, <i>A Treatise on Probability</i> (1921)

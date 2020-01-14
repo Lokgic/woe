@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin: 0;
         font-size: 1.6rem;
-        font-weight:300;
+        font-weight:400;
         font-family: ${theme.opensans};
         color:${theme.black};
         background:${theme.offWhite};
