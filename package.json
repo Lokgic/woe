@@ -8,7 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@types/styled-components": "^4.4.1",
-    "acorn": "^6.4.0",
+    "acorn": "^6.4.1",
     "d3": "^5.14.2",
     "next": "^9.1.6",
     "react": "^16.12.0",
